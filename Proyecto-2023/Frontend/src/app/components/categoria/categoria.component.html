@@ -1,0 +1,59 @@
+<div class="todo">
+    <div class="ft">
+        <div class="filtro">
+            <h1>Categorías</h1>
+            <div class="menu">
+                <div class="nav">
+                    <ul class="list">
+                        <li class="list_item">
+                            <div class="list_button">
+                                <button (click)="obtenerFiltro(1)">Camisetas</button>
+                            </div>
+                        </li>
+
+                        <li class="list_item">
+                            <div class="list_button">
+                                <button (click)="obtenerFiltro('2')">Jeans</button>
+                            </div>
+                        </li>
+
+                        <li class="list_item">
+                            <div class="list_button">
+                                <button (click)="obtenerFiltro('3')">Polos</button>
+                            </div>
+                        </li>
+
+                        <li class="list_item">
+                            <div class="list_button">
+                                <button (click)="obtenerFiltro('4')">Chaquetas</button>
+                            </div>
+                        </li>
+
+                        <li class="list_item">
+                            <div class="list_button">
+                                <button (click)="obtenerFiltro('5')">Camisas</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contenido">
+        <div class="prenda" *ngFor="let prenda of ropa">
+            <div class="elementos">
+                <div class="t-img">
+                    <div class="image">
+                        <img [src]="prenda.imagen" />
+                        <h2>{{ prenda.nombre }}</h2>
+                    </div>
+                </div>
+                <div class="content">
+                    <p>{{ prenda.descripcion }}</p>
+                    <h3 class="precio">{{ prenda.precio | currency : " COP " }}</h3>
+                    <button (click)="verPrenda(prenda.id_prenda)">Ver prenda</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

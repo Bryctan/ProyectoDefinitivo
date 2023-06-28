@@ -1,0 +1,21 @@
+<div class="contenido">
+
+    <div *ngIf="spinner" class="spinner"></div>
+
+    <div *ngIf="formulario" class="formulario">
+        <div class="elemento">
+            <h2>Inicio de sesión</h2>
+            <div class="registrarse">
+                <p>¿Aún no tienes una cuenta?</p>
+                <a routerLink="/register">Registrarse</a>
+            </div>
+        </div>
+
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+            <input type="email" formControlName="correo" required placeholder="Correo">
+            <input type="password" formControlName="clave" required placeholder="Contraseña">
+            <button type="submit">Iniciar sesión</button>
+            <p class="mensaje">{{mensaje}}</p>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="contenido">
+    <div class="usuario" *ngFor="let usuario of usuario">
+        <h2>¡Bienvenido!</h2>
+        <p>
+            Nos agrada verte <strong>{{usuario.name}}</strong>, recuerda tu dirección de correo electrónico y nunca lo
+            pierdas
+            de vista <strong>{{usuario.email}}</strong>.
+        </p>
+        <div class="elemento">
+            <button routerLink="">Ir al inicio</button>
+            <p>O toma un respiro que nosotros te llevamos al inicio en <strong>{{ contador }}</strong></p>
+        </div>
+    </div>
+</div>

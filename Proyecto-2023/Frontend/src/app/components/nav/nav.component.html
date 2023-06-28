@@ -1,0 +1,60 @@
+<!-- <nav>
+    <div class="nav">
+        <div class="logo"><img src="../../../assets/img/LOGO.png" alt=""></div>
+        <div class="busqueda">
+            <label for="buscar"><i class="fa-solid fa-magnifying-glass"></i></label>
+            <input type="search" id="buscar" placeholder="Buscar">
+        </div>
+        <div class="botones">
+            <a routerLink="/register" *ngIf="!nombre">Registrarse</a>
+            <a routerLink="/login" *ngIf="!nombre">Iniciar sesión</a>
+             <a routerLink="/login" *ngIf="nombre">{{nombre}}</a> 
+            <h4>{{nombre}}</h4>
+            <button (click)="cerrarSesion()" *ngIf="nombre">Cerrar sesión</button>
+        </div>
+    </div>
+    <div class="elementos">
+        <a class="vender" href="#">Inicio</a>
+        <a class="vender" href="#">Vende tu ropa</a>
+        <ul>
+            <li><a href="#">Hombre</a></li>
+            <li><a href="#">Mujer</a></li>
+            <li><a href="#">Niños</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="capa"></div> 
+-->
+<nav [ngClass]="{'navbar': true, 'transparent': scrolled}">
+    <div class="elementos">
+        <div class="logo"><a href="#">DEFAULTH - MEMBERS</a></div>
+        <a class="vender" href="#">Vende tu ropa</a>
+        <ul>
+            <li><a routerLink="categorias/caballero">Caballero</a></li>
+            <li><a routerLink="categorias/dama">Dama</a></li>
+            <li><a routerLink="categorias/niños">Niños</a></li>
+        </ul>
+    </div>
+    <div class="nav">
+        <a class="vender" href="#"><span class="material-symbols-outlined">
+                home
+            </span>Inicio</a>
+        <div class="busqueda">
+            <label for="buscar">
+                <span class="material-symbols-outlined">search</span>
+            </label>
+            <input type="search" id="buscar" placeholder="Buscar">
+        </div>
+        <div class="botones">
+            <a *ngIf="!nombre" routerLink="register"><span class="material-symbols-outlined">
+                    how_to_reg
+                </span>Registrarse</a>
+            <a *ngIf="nombre">{{nombre}}</a>
+            <a *ngIf="nombre" (click)="cerrarSesion()">Cerrar Sesion</a>
+            <a *ngIf="!nombre" routerLink="login"><span class="material-symbols-outlined">
+                    background_replace
+                </span>Iniciar sesión</a>
+        </div>
+    </div>
+
+</nav>

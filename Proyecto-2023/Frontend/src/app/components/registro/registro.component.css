@@ -1,0 +1,103 @@
+.contenido {
+    /* border: 2px red solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+}
+
+.elemento {
+    background-color: rgb(76, 143, 109);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    color: white;
+    flex-direction: column;
+    gap: 50px;
+    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+}
+
+h2 {
+    font-size: 35px;
+}
+
+.formulario {
+    width: auto;
+    /* border: 2px black solid; */
+    height: 350px;
+    display: flex;
+}
+
+form {
+    /* border: 2px yellow solid; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    gap: 25px;
+    background-color: rgb(228, 226, 226);
+}
+
+form input {
+    background-color: white;
+    border: none;
+    width: 80%;
+    height: 30px;
+    padding-left: 2px;
+}
+
+form button {
+    background-color: rgb(23, 46, 65);
+    color: white;
+    border: none;
+    height: 50px;
+    width: 80%;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: rgb(23, 65, 44);
+}
+
+a {
+    background-color: rgb(23, 46, 65);
+    border: none;
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.registrarse {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mensaje {
+    height: 20px;
+}
+
+/* Spinner */
+
+.spinner {
+    height: 120px;
+    width: 120px;
+    border: 6px solid;
+    border-color: black transparent black transparent;
+    border-radius: 50%;
+    animation: spin 1.3s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

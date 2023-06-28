@@ -1,0 +1,109 @@
+<div class="contenido">
+    <div class="slider">
+        <ul>
+            <li><img src="https://cadena-q.com/modules/jxmegalayout/extracontent/i5H6Dn4hsrdS4VU0.jpg" alt=""></li>
+            <li><img src="https://www.deartee.com/wp-content/uploads/2021/01/Slider-Rebajas-fw20.jpg" alt=""></li>
+            <li><img src="https://cachemirasss.cl/wp-content/uploads/2018/03/slider-013-cachemiras-ss-chalecos-sueter-ropa-chile-santiago-moda-lana.jpg"
+                    alt=""></li>
+            <li><img src="https://cachemirasss.cl/wp-content/uploads/2018/02/slider-012-cachemiras-ss-chalecos-sueter-ropa-chile-santiago-moda-lana.jpg"
+                    alt=""></li>
+        </ul>
+    </div>
+    <!-- <p>{{prenda.precio}}</p> -->
+    <div class="categoria">
+
+        <h4>DAMA</h4>
+        <div class="prendas">
+
+            <div class="prenda" *ngFor="let prenda of prendasDama">
+                <div></div>
+                <div class="elementos">
+                    <div class="t-img">
+                        <div class="image">
+                            <img [src]="prenda.imagen">
+                            <h2>{{prenda.nombre}}</h2>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <p>{{prenda.descripcion}}</p>
+                        <h3 class="precio">{{prenda.precio|currency:' COP ' }}</h3>
+                        <button (click)="verPrenda(prenda.id_prenda)">Ver prenda</button>
+                    </div>
+
+                    <!-- <p>{{prenda.id}}</p> -->
+
+
+                    <!-- <input type="submit"> -->
+
+                </div>
+            </div>
+        </div>
+        <button class="btnCategoria" (click)="categoria(dama)">Ver prendas</button>
+    </div>
+
+    <div class="categoria">
+
+        <h4>CABALLERO</h4>
+
+        <div class="prendas">
+            <div class="prenda" *ngFor="let prenda of prendasCaballero">
+                <div></div>
+                <div class="elementos">
+                    <div class="t-img">
+                        <div class="image">
+                            <img [src]="prenda.imagen">
+                            <h2>{{prenda.nombre}}</h2>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <p>{{prenda.descripcion}}</p>
+                        <h3>{{prenda.precio|currency:' COP ' }}</h3>
+                        <button (click)="verPrenda(prenda.id_prenda)">Ver prenda</button>
+                    </div>
+
+                    <!-- <p>{{prenda.id}}</p> -->
+
+
+                    <!-- <input type="submit"> -->
+
+                </div>
+            </div>
+        </div>
+
+
+        <button class="btnCategoria" (click)="categoria(caballero)">Ver prendas</button>
+
+    </div>
+
+    <div class="categoria">
+
+        <h4>NIÑOS</h4>
+
+        <div class="prendas">
+            <div class="prenda" *ngFor="let prenda of prendasNinos">
+                <div></div>
+                <div class="elementos">
+                    <div class="t-img">
+                        <div class="image">
+                            <img [src]="prenda.imagen">
+                            <h2>{{prenda.nombre}}</h2>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <p>{{prenda.descripcion}}</p>
+                        <h3>{{prenda.precio|currency:' COP ' }}</h3>
+                        <button (click)="verPrenda(prenda.id_prenda)">Ver prenda</button>
+                    </div>
+
+                    <!-- <p>{{prenda.id}}</p> -->
+
+
+                    <!-- <input type="submit"> -->
+
+                </div>
+            </div>
+        </div>
+
+        <button class="btnCategoria" (click)="categoria(ninos)">Ver prendas</button>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+.contenido {
+    height: 500px;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.usuario {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+button {
+    width: 45%;
+    height: 50px;
+    cursor: pointer;
+    background-color: rgb(23, 46, 65);
+    border: none;
+    color: white;
+}
+
+.elemento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+

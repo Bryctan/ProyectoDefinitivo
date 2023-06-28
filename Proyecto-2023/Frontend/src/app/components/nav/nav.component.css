@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    font-family: 'Agdasima', sans-serif;
+}
+
+nav {
+    /* display: contents; */
+    width: 100%;
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 140px;
+    gap: 25px;
+    justify-content: center;
+
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+li {
+    display: flex;
+    height: 30px;
+    width: 80px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+li a:hover {
+    background-color: rgb(23, 65, 44);
+    border: none;
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.elementos {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 20px;
+    align-items: center;
+}
+
+.elementos .vender {
+    background-color: rgb(23, 65, 44);
+    border: none;
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+}
+
+.botones {
+    display: flex;
+    gap: 20px;
+}
+
+.botones a {
+    background-color: rgb(23, 46, 65);
+    border: none;
+    height: 30px;
+    width: 130px;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+.busqueda {
+    display: flex;
+    align-items: center;
+    padding-left: 136px;
+    gap: 10px;
+}
+
+::placeholder {
+    color: black;
+    /* Cambia el color a tu preferencia */
+}
+
+.material-symbols-outlined {
+    /* border: 2px black solid; */
+    display: flex;
+}
+
+.busqueda input {
+    border: none;
+    border-bottom: 1px black solid;
+    height: 27px;
+    width: 270px;
+    /* color: black; */
+    background-color: transparent;
+    /* border-radius: 7px; */
+}
+
+.logo {
+    font-size: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+nav.navbar a {
+    text-decoration: none;
+    /* color: green; */
+    display: flex;
+    align-items: center;
+}
+
+nav.navbar.transparent a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    display: fixed;
+    transition: background-color 0.3s ease;
+}
+
+.navbar.transparent {
+    background: #043d126b;
+    position: fixed;
+    z-index: 200;
+    width: 1900px;
+}
+
+material-symbols-outlined {
+    color: white;
+}

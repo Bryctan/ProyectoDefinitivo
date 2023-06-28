@@ -1,0 +1,287 @@
+.capa {
+    width: 100%;
+    /* height: 70vh; */
+    /* background: url("https://images5.alphacoders.com/130/1306752.jpg"); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.contenido {
+    margin: 50px 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    /* gap: 20px; */
+    color: wheat
+}
+
+.c-img {
+    width: 40%;
+    height: 100%;
+    background-color: #d6d6d6a1;
+    /* border-top-right-radius: 300px; */
+    /* border-bottom-right-radius: 300px; */
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.c-img .imagen {
+    width: 70%;
+    height: 70%;
+
+}
+
+.c-img .imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.c-img .oferta {
+    width: 40%;
+    height: 100%;
+    background-color: red;
+
+
+}
+
+.informacion {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    background-color: #ffffff3a;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: static;
+
+
+}
+
+.informacion h2 {
+    font-size: 40px;
+
+}
+
+
+p {
+    font-size: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button {
+
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: none;
+    border: 2px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+span {
+    color: forestgreen;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.precio {
+
+    font-size: 40px;
+    border-bottom: solid #ffffffcb 2px;
+}
+
+.talla,
+.color,
+.estado {
+
+    font-size: large;
+
+}
+
+.botones {
+    height: 10vh;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.desc {
+    font-size: medium;
+}
+
+strong {
+
+    color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/**/
+
+.prendas {
+    /* border: 2px green solid; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.prenda {
+    border: 2px rgb(226, 224, 224) solid;
+    width: 20%;
+    border-radius: 10px;
+    width: 340px;
+    border-radius: 10px;
+    border: #4CAF50 solid 2px;
+}
+
+.prenda:hover {
+    opacity: 0.8;
+}
+
+.prenda:hover input {
+    background-color: rgb(23, 65, 44);
+}
+
+.prenda img {
+    /* width: 400px;
+        height: 400px; */
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+
+.elementos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 480px;
+    border-radius: 40px;
+}
+
+button {
+    width: 60%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    border: none;
+
+}
+
+button:hover {
+    background-color: #4CAF50;
+    /* Green */
+    color: white;
+}
+
+.elementos h3 {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.elementos h3 strong {
+    font-size: 40px;
+    padding-left: 10px;
+}
+
+h2 {
+    font-size: 50px;
+    color: rgb(5, 29, 16);
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+
+.image img {
+    width: 90%;
+    height: 200px;
+}
+
+.t-img {
+    width: 100%;
+    height: auto;
+    /* background-color: rgb(230, 230, 230); */
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 20px 0;
+}
+
+.t-img h2 {
+    text-align: center;
+    font-size: 25px;
+}
+
+
+.content {
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(230, 230, 230);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+}
+
+.content p {
+    padding: 13px;
+    text-align: center;
+}
+
+h4 {
+
+    font-size: 50px;
+    text-align: left;
+    color: aliceblue;
+    border-bottom: solid green 2px;
+}
+
+.precio {
+    font-size: 25px;
+}

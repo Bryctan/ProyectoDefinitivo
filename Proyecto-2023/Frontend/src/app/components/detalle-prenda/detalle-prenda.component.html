@@ -1,0 +1,42 @@
+<div class="capa">
+    <div *ngFor="let prenda of prenda" class="contenido">
+        <div class="c-img">
+            <div class="imagen"> <img [src]="prenda.imagen"></div>
+        </div>
+        <div class="informacion">
+            <p class="precio">{{prenda.precio|currency:' COP ' }}</p>
+            <h2>{{prenda.nombre}}</h2>
+            <p class="desc">{{prenda.descripcion}}</p>
+            <p class="talla"> TALLA : {{prenda.talla}}</p>
+            <p class="color">COLOR : {{prenda.color}}</p>
+            <!-- <p><strong>Talla:</strong> L</p> -->
+            <p class="estado"> {{prenda.estado}}/10</p>
+            <div class="botones">
+                <button (click)="comprar()"><span
+                        class="material-symbols-outlined">local_mall</span><strong>ADQUIRIR</strong></button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="similares">
+        <h3>Prendas similares</h3>
+        <div class="prendas">
+            <div class="prenda" *ngFor="let prenda of recomendadas">
+                <div></div>
+                <div class="elementos">
+                    <div class="t-img">
+                        <div class="image">
+                            <img [src]="prenda.imagen">
+                            <h2>{{prenda.nombre}}</h2>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <p>{{prenda.descripcion}}</p>
+                        <h3>{{prenda.precio|currency:' COP ' }}</h3>
+                        <button (click)="verPrenda(prenda.id_prenda)">Ver prenda</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
